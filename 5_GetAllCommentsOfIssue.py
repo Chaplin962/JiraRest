@@ -16,10 +16,5 @@ print(data["total"])
 with io.open("comments.csv", "w", encoding="utf-8") as f1:
     f1.write("comment id" + "," + "comment text" + "\n")
     for comments in data["comments"]:
-        f1.write(
-            comments["id"]
-            + ","
-            + comments["body"]["content"][0]["content"][0]["text"]
-            + "\n"
-        )
+        f1.write(comments["id"] + "," + comments["body"] + "\n")
     f1.close()

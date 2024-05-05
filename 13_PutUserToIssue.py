@@ -1,10 +1,10 @@
 import requests, json, info
 
 # Make changes here
-issue_id = "KAN-1"
-user_id = "5ff7d2d91051d10075a65acb"
+issue_id = "KAN-8"
+user_id = "70121:265af059-1ced-4e50-8134-39e128aa68e6"
 
-url = info.hostName + "/rest/api/3/issue/" + issue_id + "/assignee"
+url = info.hostName + "/rest/api/latest/issue/" + issue_id + "/assignee"
 headers = {"Accept": "application/json", "Content-Type": "application/json"}
 
 # Assing user to issue

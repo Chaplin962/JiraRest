@@ -12,4 +12,5 @@ print(data)
 
 # Print user data
 for users in data:
+    print(users["accountId"])
     print(users["displayName"])

@@ -13,10 +13,7 @@ payload = json.dumps(
     }
 )
 response = requests.post(
-    url,
-    headers=headers,
-    data=payload,
-    auth=(info.user, info.pwd),
+    url, headers=headers, data=payload, auth=(info.user, info.pwd), verify=False
 )
 data = response.json()
 print(data["id"])
